@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="css/footer.css" />
+<link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/<%= css %>.css" />
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<title><%= title %></title>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <header>
+      <div>
+          <nav class="main-nav">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a href="/home" class="nav__link">C-Craft Student Activity</a></li>
+              <li class="nav__list-item">
+                <a href="/contactUs" class="nav__link">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color: azure; border: none;" class="nav-link dropdown-toggl" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  OUR COURSES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/Machinelearning">MachineLearning</a>
+                  <a class="dropdown-item" href="/GraphicDesign">Graphic design</a>
+                  <a class="dropdown-item" href="/WebDevelopment">Web Development</a>
+                  <a class="dropdown-item" href="/EmbeddedSystem">Embedded System</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+        <% if (isAuthenticated){%>
+        <div class="bttn">
+          
+            <ul >
+              <li >
+                <a class="nav__link nav__link--btn" href="/Logout">Log Out</a>
+              </li>
+              <li >
+                <a
+                  class="nav__link nav__link--btn nav__link--btn--highlight"
+                  href="/User-Profile"
+                  >Profile</a
+                >
+              </li>
+            </ul>
+          
+        </div>
+        <%}else{%>
+          <div class="bttn">
+          
+            <ul >
+              <li >
+                <a class="nav__link nav__link--btn" href="/login">Log In</a>
+              </li>
+              <li >
+                <a
+                  class="nav__link nav__link--btn nav__link--btn--highlight"
+                  href="/RegisterationPage"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+          
+        </div>
+        <%}%>
+      </header>
+
+<body> 

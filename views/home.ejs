@@ -1,0 +1,91 @@
+<%- include('layouts/header')%>
+        <h1 style="color: cornsilk;margin-top: 200px;">C-CRAFT STUDENT ACTIVITY</h1>
+        <%if(success_msg!=''){%>
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <%=success_msg%>
+           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+      
+        <%}%>
+        <p style="font-size: large; font-family: 'Times New Roman', serif; margin-top:50px ;">
+          It is started by the students of Computer Engineering Department at Cairo University.</br>
+          It is conecntrated on helping people to know more about computers world, and in teaching famous</br>
+           subjects and technologies.
+        </p>
+      <div class="container2"> 
+          
+          <div class="two"> 
+            <div class="container4">
+            <h1 style="color: rgb(2, 34, 19);" >Graphic design</h1>
+            <div class="ES">
+            <p>
+              This is an introductory 3D Graphics course using Cinema4D. No pre-requisites needed. For the most part, we will be exploring each aspect of Cinema4D and understanding the basic tools & concepts, rather than diving too deep in a certain one. This includes Modeling, Animation, Motion Graphics, Texturing & Rendering. All these can help you get comfortable & ready to create your own 3D art!!
+            </p>
+          </div>
+            <a href="/GraphicDesign"><button class="btn">View Course</button></a>
+          </div>
+          <!-- <img src="./img/GR.jpg" alt="graphic"> -->
+          </div>
+          
+          <div class="three">
+              
+            <!-- <img src="./img/css.jpg" alt="web"> -->
+            <div class="container4">
+            <h1 style="color: cornsilk;">Web Development</h1>
+            <div class="ES">
+            <p>
+                
+              In this course, you will learn everything about the basics of being a full-stack web developer. The course is divided into three parts. First is front-end web development, where you will learn about how to build the website's view, and how the user will interact with it in the browser. Second is back-end web development, where you will learn how to connect to the server, render your front-end files, get data from the browser, and store these data in a database. Finally, you will learn about the basics of the CMD (Windows Command Line), and about Git and GitHub. Previous knowledge about programming in any language such as C++ or Python is preferable for joining this course.
+                   
+            </p>
+          </div>
+            <a href="/WebDevelopment"><button class="btn">View Course</button></a>
+          </div>
+          </div>
+          <div class="four"> 
+            <div class="container4">
+              
+              <h1 style="color: cornsilk;">Machine Learning</h1>
+              <div class="ES">
+               <p>
+              This course delivers an ample overture to Machine Learning with picking up on all of the needed 
+              advanced mathematics, the course depicts a broad spectrum of algorithms that are used in supervised
+               and unsupervised learning, ranging from linear & logistic regression to clustering and recommendor
+               systems, the syllabus also tops off with an introduction to neural networks and deep learning along
+                with a team-based course project with applications on most of what has been covered.
+            </p>
+              </div>
+            <a href="/Machinelearning" ><button class="btn">View Course</button></a>
+          </div>
+          <!-- <img src="./img/Ma.jpg" alt="Machine"> -->
+          </div>
+          <div class="one">
+            
+            <!-- <img src="./img/ES.jpg" alt="embedded"> -->
+            <div class="container4">
+            <h1 style="color: cornsilk;">Embedded System </h1><br/>
+            <div class="ES">
+            <p >
+              Have you ever wondered how your code is executed? What do people mean by architecture and
+               pipelines and all those stuff ? How to implement ADCs, PWM signals and communication protocols
+                ? If you are interested and want to know the answer of those questions then, you should enroll 
+                in our embedded systems course. In this course we assume that you have a prior knowledge of logic
+                 design and programming so that, we can skip all the boring stuff and focus on our goal of learning 
+                 embedded systems. Our journey starts by a crash course about the C language and revealing its secrets,
+                  and some professionals - monopolized topics.Then, we will dive deeply into our CPU to understand how
+                   the code is executed, and the difference between the different architectures.Then, we will take our way
+                    back again building an entire RAM with just logic gates. After those low level stuff, action comes! 
+                  We will deal directly with our microcontroller to control motors, use sensors and interface with
+                   different devices using the standard communication protocols. At the end of the course there is an optional
+                    crash course about Real Time Operating System 'RTOS'.
+            </p><br/>
+          </div>
+            <a  href="/EmbeddedSystem"><button class="btn">View Course</button></a>
+            </div>
+          </div> 
+      </div>
+<%- include('layouts/footer')%>
+
+   

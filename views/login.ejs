@@ -1,0 +1,48 @@
+<%- include('layouts/header')%>
+<div class="wrapper">
+   
+        <h1 style="color: cornsilk;" >Log In</h1>
+          <% if(typeof errors!=='undefined'){ %>
+            <%errors.forEach(error=>{%>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                     <%=error.msg%>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              
+            <%})%>
+            <%}%>
+            
+          <%if(error_msg!=''){%>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <%=error_msg%>
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+            </div>
+          <%}%>
+          <%if(error!=''){%>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+              <%=error%>
+             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+            </div>
+          <%}%>
+        <img src="./img/login.jpg  " alt="Smile">
+    <form action="/login"    method="POST">
+        <label for="Email">Email: </label><br />
+        <input type="email" name="Email" id="Email" autocomplete="off" placeholder="Email"/><br />
+        <label for="Password">Password: </label><br />
+        <input type="password" name="Password" id="Password" autocomplete="off" placeholder="Password"/><br />
+        <button  class="btn"type="submit" >Log In</button>
+        
+    </form>
+    <div class="bottom-text">
+        <input type="checkbox" name="remember" checked="checked">Remind me
+        <a href="#">Forgot Password ?</a>
+    </div>
+    <small>Don't have any account ? <a href="/RegisterationPage" style="color: azure;">Register Now</a></small>
+</div>
+<%- include('layouts/footer')%>

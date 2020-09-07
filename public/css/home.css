@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient(rgba(206, 194, 163, 0.322),rgba(209, 182, 146, 0.514)),url("../img/background1.jpg");
+    position: relative;
+    background-position: top;
+    background-size: 100% 110vh ;
+    background-repeat: no-repeat;
+}
+body h1{
+    letter-spacing: 4px;
+}
+.container2 div p{
+    margin-top: 10px;
+}
+.container2{
+
+    width: 100%;
+    height: 45%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+   margin-top: 27%;
+   background-color: rgba(233, 219, 188, 0.801);
+}
+h1{
+
+font-style: italic;
+margin: 10px;
+}
+.container2 div{
+    
+    height: 430px;
+    width: 100%;
+    display: inline-flex;
+}
+
+.container2 div img{
+    height: 80%;
+    width: 35%;
+    margin: 40px 10px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+.container4{
+    font-size: medium;
+    margin:5px;
+    display: block;
+    flex-direction: column;
+    
+}
+.btn{
+    height: 30px;
+    width: 150px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(161, 161, 147);
+    transition: 0.3s;
+    margin-bottom: 100px;
+}
+.one .btn{
+    margin-bottom: 10px;
+}
+.container2 .one:hover{
+    color:rgb(0, 0, 0);
+    box-shadow:0 0 10px rgb(104, 128, 95) ,0 0 40px rgb(104, 128, 95),0 0 80px  rgb(104, 128, 95);
+    background:linear-gradient(rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.514)),url("../img/ES.jpg");
+    background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+   
+}
+.container2 .two:hover{
+    color:rgb(0, 0, 0);
+    box-shadow:0 0 10px rgb(153, 142, 107) ,0 0 40px rgb(153, 142, 107),0 0 80px  rgb(153, 142, 107);
+    background:linear-gradient(rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.514)),url("../img/GG.jpg");
+    background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+}
+.container2 .three:hover{
+    color:rgb(0, 0, 0);
+    box-shadow:0 0 10px rgba(155, 142, 97) ,0 0 40px rgba(155, 142, 97),0 0 80px  rgba(155, 142, 97);
+    background:linear-gradient(rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.514)),url("../img/WDD.jpg");
+    background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.container2 .four:hover{
+    color:rgb(0, 0, 0);
+    box-shadow:0 0 10px rgb(104, 91, 56) ,0 0 40px rgb(104, 91, 56),0 0 80px  rgb(104, 91, 56);
+    background:linear-gradient(rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.514)),url("../img/Mach.jpg");
+    background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.btn:hover{
+color:rgb(0, 0, 0);
+background: rgb(153, 142, 107);
+box-shadow: 0 0 10px rgb(153, 142, 107) ,0 0 40px rgb(153, 142, 107),0 0 80px  rgb(153, 142, 107);
+}
+
+    .one{
+        /* background-color: rgb(148, 161, 144); */
+        background: url('../img/ES.jpg');
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .ES{
+        /* background-color: rgba(86, 97, 100, 0.438); */
+        border-radius: 20px;
+        transition: .5s ease;
+        opacity: 0;
+        height: 50px;
+        width: 90%;
+    }
+    p{
+        color: rgb(255, 255, 255);
+        font-size:20px ;
+        font-weight: bold;
+    }
+    .ES:hover{
+        opacity: 1;
+    }
+
+    .two{
+        background: url('../img/GG.jpg');
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    
+.three{
+    background: url('../img/WDD.jpg');
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.four{
+    background: url('../img/Mach.jpg');
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+footer{
+    background-color: rgba(233, 219, 188, 0.801);
+    border-top: 2px solid rgb(61, 39, 7);
+    color: rgb(0, 0, 0);
+}
+
+

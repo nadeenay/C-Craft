@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+
+}
+body{
+    background-color: rgb(155, 149, 120);
+    padding-top: 60px;
+}
+.card1{
+    height: 50vh;
+    width: 90%;
+    background-image: url('../img/GG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    margin: 30px 60px;
+    border: 2px solid rgb(161, 161, 147);
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    
+}
+.card2{
+    margin-left: 40px;
+}
+li{
+    list-style: none;
+}
+ .btns button
+       {
+      
+            height: 30px;
+            width: 150px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(161, 161, 147);
+            margin: 20px 5px;
+        
+       }
+       li img{
+           height: 50px;
+           width: 50px;
+           border-radius: 30px;
+           margin:5px;
+       }
+        .card1Img {
+            height: 100%;
+            width: 400px;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+       }
+       ul{
+           margin: 20px 60px;
+       }
+       .list2{
+           margin: 20px 0;
+       }
+       .info{
+           display: flex;
+           
+       }
+       .col-sm-6 .card{
+        width: 600px;
+        height: 250px;
+        border: 2px solid rgb(197, 191, 172);
+       
+        margin: 20px 25px;
+        border-radius: 20px;
+    }
+    .col-sm-6 .card-body{
+     width: 96.5%;
+     height: 96.5%;
+     border: 2px solid rgb(197, 191, 172);
+        margin: 10px;
+        border-radius: 20px;
+    }
+    .btns{
+display: flex;
+    }

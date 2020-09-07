@@ -1,0 +1,50 @@
+
+    <%- include('layouts/header')%>
+    <div class="wrapper">
+        <h1 style="color: rgb(6, 58, 19);" >Contact Us</h1>
+        
+        <% if(typeof msg!=='undefined'){ %>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                     <%=msg%>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+            <%}%>
+            <img src="./img/contact1.jpg" alt="Smile">
+    <form action="/contactUs" method="POST">
+        <label for="name" style="color: rgb(0, 0, 0);">Name: </label><br />
+        <input type="text" name="name" id="name"  autocomplete="off" placeholder="Name" /><br />
+        <label for="Email" style="color: rgb(10, 7, 7);" >Email: </label><br />
+        <input type="text" name="Email" id="Email" autocomplete="off" placeholder="Email"/><br />
+        <label for="Subject" style="color: rgb(0, 0, 0);">Subject: </label><br />
+        <select name="Subject" placeholder="Subject">
+            <option >Select the course you want</option>
+            <option value="Machine learning">Machine learning</option>
+            <option value="Graphic design">Graphic design</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Embedded System">Embedded System</option>
+          </select>
+        <label for="Message" style="color: rgb(8, 6, 6);display: block;margin-bottom: 0 ;margin-top:20px;">Message : </label><br/>
+        <textarea type="text" name="Message"  id="Message" rows="6" autocomplete="off" placeholder="Message"></textarea><br />
+        <button class="btn" type="submit">DONE</button>
+    </form>
+</div>
+<script>
+  $('form').on('submit',(e)=>{
+    e.preventDefault();
+    const name=$('#name').val().trim();
+    const Email=$('#Email').val().trim();
+    const Subject=$('.Subject').val().trim();
+    const Message=$('#Message').val().trim();
+    const data={
+      nme,Email,Subject,Message
+    };
+    $.post('/',data,()=>{//first parameter our url of the submit button /second parameter the data /thired what i want to happen
+      console.log('Server Received Our Data');
+    });
+
+  });
+</script>
+<%- include('layouts/footer')%>
+

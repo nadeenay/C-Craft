@@ -1,0 +1,31 @@
+<%- include('layouts/header') %>
+<div class="Profile">
+  <h1>Hello <%= user.Name %> !</h1>
+  <% if (user.image) { %>
+    <div class="im">
+        <img  src="/uploads/<%= user.image %>" ></div>
+        <% } else { %>
+          <div class="im">
+        <img  src="/img/<%= user.Gender %>.jpg"  ></div>
+        <% } %>
+  <h3><%= user.Bio %></h3>
+  <% if( user.Courses.length ===0 ){%>
+    
+    <h4>You Can Have A Look In Our Courses In The Home Link !</h4>
+    <div>
+    <img class ="Smile"src="/img/1234.jpg" alt="Error">
+    <a href="/home">HOME</a>
+    </div>
+    <%}else{%>
+      <h4>You have enroll in : </h4>
+      <ul>
+        <%user.Courses.forEach(course=>{%>
+        <li style="list-style: none;"><%=course%></li>
+        <%})%>
+      </ul>
+      <%}%>
+<a href="/ProfileEdit"><button>Edit Profile Info !</button></a>
+</div>
+
+<%- include('layouts/footer') %>
+

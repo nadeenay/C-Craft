@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+
+}
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient(rgba(206, 194, 163, 0.322),rgba(209, 182, 146, 0.514)),url("../img/MaterialBackground.jpg");
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+.sessions,.assignments,.project{
+width: 400px;
+border: solid 2px rgb(76, 146, 226);
+border-radius: 30px;
+display: block;
+justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:20px
+
+}
+.one{
+    display: flex;
+}
+img{
+    
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin:10px;
+}
+.container{
+    display: flex;
+}
+h2{
+    margin:25px 5px;
+}
+li{
+    list-style: none;
+}

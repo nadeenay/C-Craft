@@ -1,0 +1,25 @@
+
+footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+.MainFooter{
+    background-color: none;
+    border-top:2px solid rgb(10, 7, 1);
+    text-align: center;
+}
+.btn1{
+    color: black;height: 30px;
+            width: 100px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            font-size: 15px;
+            background-color: blanchedalmond;
+            margin: 10px;
+            font-family: 'Times New Roman', Times, serif;
+}

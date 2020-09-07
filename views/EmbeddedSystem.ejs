@@ -1,0 +1,311 @@
+<%- include('layouts/header')%>
+<div class="card1">
+    <div class="card2">
+      <h1 class="card-title" style="color: rgb(253, 253, 253);">Embedded System</h5>
+        <%if(error!=''){%>
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <%=error%>
+           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+          </div>
+        <%}%>
+      <div class="info">
+        <ul >
+          <h3 style="color: rgb(253, 253, 253)";>Instructors : </h3>
+          <li><img src="./img/Mostafa Wael.jpg">Mostafa Wael</li>
+          <li><img src="./img/Toka Yasser.jpg">Toka Yasser</li>
+          <div class="btns">
+          <a href="/Enroll1"> <button>Enroll</button></a>
+          <a href="/ViewMaterial1"><button>View Material</button></a>
+        </div>
+        </ul>
+        <ul >
+          <li class="list2" >Start Date : 21/6/2020</li>
+          <li class="list2">End Date : 30/8/2020</li>
+          <li class="list2">Number Of Sessions : 21</li>
+          <li class="list2">Schedule : Sunday and Wednesday</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Installing Environment (session 1)</h5>
+          <ul>
+            <li>C Basics</li>
+            <li>Loops</li>
+            <li>Functions</li>
+            <li>Arrays</li>
+            <li>Pointers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Modifiers (session 2)</h5>
+          <ul>
+          <li>User Defined Data Types</li>
+            <li>Preprocessing</li>
+            <li>Dynamic Allocation</li>
+            <li>Some Data Structures</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Storage (session 3)</h5>
+         <ul>
+           <li>Volatile and Non-Volatile Memory</li>
+         </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Embedded Systems Concepts (session 4)</h5>
+          <ul>
+            <li>Inside the Processor</li>
+              <li>Insrtuction Set Architecture</li>
+              <li>Processor Cycle</li>
+              <li>Pipelines</li>
+            </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Assembly Crash Course (session 5)</h5>
+          <ul>
+            <li>Read Only</li>
+            </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Dealing with DIOs (session 6)</h5>
+          <ul>
+            <li>Pull down/up connections</li>
+              <li>Interfacing with LEDs</li>
+              <li>Interfacing with Switches</li>
+              <li>Interfacing with 7-SEG</li>
+            </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Layered Archeticture (session 7)</h5>
+         <ul>
+         <li>Microcontroller registers</li>
+        <li>Writing GPIO drive</li>
+         </ul> 
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">LCD Interfacing (session 8)</h5>
+           <ul>
+             <li>LCD Drivers</li>
+           </ul>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Keypad Interfacing (session 9)</h5>
+          <ul>  
+            <li>Keypad Drivers</li>
+            </ul>  
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Switches (session 10)</h5>
+          <ul>
+          <li>Transistors</li>
+          <li>Relay</li>
+          <li>Opto-couplers</li>
+          <li>Darlington Pair</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Interrupts (session 11)</h5>
+          <ul>
+<li>Interrupts Drivers</li>
+<li>DC Motors</li>
+<li>Stepper Motors</li>
+</ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">ADC (session 12)</h5>
+          <ul>
+          <li>ADC Drivers</li>
+          <li>Temperature and Light Sensors Drivers</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Timers and Counterst (session 13)</h5>
+          <ul>
+          <li>Timers and Counters Drivers</li>
+          <li>Ultrasonic Drivers</li>
+         </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">PMW (session 14)</h5>
+        <ul>
+          <li>Servo Motors</li>
+        </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">ICU and Watchdog (session 15)</h5>
+         <ul>
+<li>Input Capture Unit</li>
+<li>Watchdog Timer</li>
+</ul> 
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">UART Protocol (session 16)</h5>
+          <ul>
+          <li>UART Drivers</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">SPI Protocol (session 17)</h5>
+          <li>
+          SPI Drivers
+        </li>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">I2C Protocol (session 18)</h5>
+          <ul>
+          <li>I2C Drivers</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">EEPROM (session 19)</h5>
+          <ul>
+<li>EEPROM Drivers</li>
+</ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <var><div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Introduction to RTOS (session 20)</h5>
+          <ul>
+<li>Introduction to RTOS</li>
+</ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Using Free RTOS (session 21)</h5>
+         <ul>
+         <li>Using Free RTOS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</var>
+<%- include('layouts/footer')%>
